@@ -15,7 +15,7 @@
   },
   "keywords": [],
   "author": "meghein",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "fastify": "^3.12.0",
     "fastify-autoload": "^3.4.2",
