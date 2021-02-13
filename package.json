@@ -1,0 +1,41 @@
+{
+  "name": "portfolio-cms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "fastify start -w -l info -P -o index.js",
+    "migrate": "node-pg-migrate",
+    "fix": "standard --fix",
+    "test": "tap -R classic"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meghein/portfolio-cms.git"
+  },
+  "keywords": [],
+  "author": "meghein",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.12.0",
+    "fastify-autoload": "^3.4.2",
+    "fastify-cli": "^2.7.0",
+    "fastify-plugin": "^3.0.0",
+    "fastify-sensible": "^3.1.0"
+  },
+  "devDependencies": {
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
+    "sinon": "^9.2.4",
+    "standard": "^16.0.3",
+    "tap": "^14.11.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "npm run fix"
+  }
+}
