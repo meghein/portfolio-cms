@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "homepage": "",
- 
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",

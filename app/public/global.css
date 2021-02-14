@@ -1,0 +1,38 @@
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FBEEC1;
+  color: #011F51;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Redressed', cursive;
+  font-size: 3em;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  border-radius: 2px;
+}
+
+button, button:focus {
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+a, a:visited {
+  color: #6a040f;
+  text-decoration: none;
+}
